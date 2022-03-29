@@ -1,0 +1,24 @@
+***** Usuario *****
+
+rdelrosario@grupovalvid.com
+rdelRosario2021*
+
+
+***** Usuario Gmail *****
+gepyxisinfo@gmail.com
+G3pyxis*2021
+
+***** Mailtrap *****
+Con la cuenta de Gmail se accede
+
+
+***** Configuración para localhost ya que trae la del servidor *****
+
+esta credenciales se aplican en el archivo .env
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=pyxis
+DB_USERNAME=root
+DB_PASSWORD=

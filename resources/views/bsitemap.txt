@@ -1,0 +1,13 @@
+@foreach($menus as $menu)
+  @if($menu->padre_id == 1)
+    @foreach($menu->menus as $producto)
+      {{url($producto->padre->slug.'/'.$producto->slug)}}
+      @foreach($producto->menus as $categoria)
+          {{url($producto->slug.'/'.$categoria->slug)}}
+        @foreach($categoria->menus as $sub_categoria)
+            {{url($producto->slug."/".$sub_categoria->slug)}}
+        @endforeach
+      @endforeach
+    @endforeach
+  @endif
+@endforeach
